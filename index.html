@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>The Band</title>
+</head>
+
+<body>
+    <div id="header">
+        <ul class="navbar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BAND</a></li>
+            <li><a href="#">TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+                <a href="#">MORE<i class="fas fa-caret-down"></i></a>
+                <ul class="sub-nav">
+                    <li class="sub-items"><a href="#">Mechandise</a></li>
+                    <li class="sub-items"><a href="#">Extra</a></li>
+                    <li class="sub-items"><a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search">
+            <i class="search-icon fas fa-search"></i>
+        </div>
+    </div>
+
+    <div id="content">
+        <!--slideshow section-->
+        <div class="slider-items">
+            <img class="slider-image" src="asset/images/chicago.jpg" alt="">
+            <div class="description">
+                <h3>Chicago</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+        <div class="slider-items" style="display: none;">
+            <img class="slider-image" src="asset/" alt="">
+            <div class="description">
+                <h3>New York</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+        <div class="slider-items" style="display: none;">
+            <img class="slider-image" src="asset/" alt="">
+            <div class="description">
+                <h3>los Angeles</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+
+        <!--the band section-->
+        <div class="the-band">
+            <div class="chapter">
+                <h2 class="chapter-title">the band</h1>
+                    <p class="sub-title">We love music,</p>
+            </div>
+            <p class="about para">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="band">
+                <div class="member">
+                    <p>Name</p>
+                    <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
+                </div>
+                <div class="member">
+                    <p>Name</p>
+                    <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
+                </div>
+                <div class="member">
+                    <p>Name</p>
+                    <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--tour section-->
+        <div class="tour-section">
+            <div class="tour">
+                <div class="chapter">
+                    <h1 class="chapter-title text-white">tour date</h1>
+                    <p class="sub-title text-white">Remember to book your tickets!</p>
+                </div>
+                <br>
+                <ul class="month-tour">
+                    <li class="row background-white">September <span class="ticket-status">Sold out</span></li>
+                    <li class="row background-white">October <span class="ticket-status">Sold out</span></li>
+                    <li class="row background-white">November <span class="ticket-status available">3</span></li>
+                </ul>
+                <div class="place-list">
+                    <div class="place-items">
+                        <img src="./asset/images/newyork.jpg" class="place-img" alt="">
+                        <div class="place-info">
+                            <b class="place-heading">New York</b>
+                            <p class="place-time">Fri27November2016</p>
+                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="place-items">
+                        <img src="./asset/images/paris.jpg" class="place-img" alt="">
+                        <div class="place-info">
+                            <b class="place-heading">Paris</b>
+                            <p class="place-time">Fri27November2016</p>
+                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="place-items">
+                        <img src="./asset/images/sanfran.jpg" class="place-img" alt="">
+                        <div class="place-info">
+                            <b class="place-heading">SanFransico</b>
+                            <p class="place-time">Sat28November2016</p>
+                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket-modal"></div>
+        <!--contact section-->
+
+        <div class="contact">
+            <div class="chapter">
+                <h1 class="chapter-title">contact</h1>
+                <p class="sub-title">Fan?Drop a note!</p>
+            </div>
+        </div>
+
+        <!--map section-->
+        <div class="map-image"></div>
+
+    </div>
+</body>
+</html>

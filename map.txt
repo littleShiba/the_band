@@ -1,0 +1,13 @@
+body
+    header
+        navbar
+        search
+    content
+        slider
+        intro
+        tour
+        ticket-modal
+        contact
+        map-image
+    footer
+
