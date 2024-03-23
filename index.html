@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +19,11 @@
     <div id="header">
         <ul class="navbar">
             <li><a href="#">HOME</a></li>
-            <li><a href="#">BAND</a></li>
-            <li><a href="#">TOUR</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#the-band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
             <li>
-                <a href="#">MORE<i class="fas fa-caret-down"></i></a>
+                <a href="#" style="pointer-events: none;">MORE<i class="fas fa-caret-down"></i></a>
                 <ul class="sub-nav">
                     <li class="sub-items"><a href="#">Mechandise</a></li>
                     <li class="sub-items"><a href="#">Extra</a></li>
@@ -29,8 +31,11 @@
                 </ul>
             </li>
         </ul>
-        <div class="search">
+        <div class="search-btn">
             <i class="search-icon fas fa-search"></i>
+        </div>
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+            <i class="menu-icon fa-solid fa-bars"></i>
         </div>
     </div>
 
@@ -59,10 +64,10 @@
         </div>
 
         <!--the band section-->
-        <div class="the-band">
+        <div id="the-band">
             <div class="chapter">
                 <h2 class="chapter-title">the band</h1>
-                    <p class="sub-title">We love music,</p>
+                    <p class="sub-title mtb16 tb-center op06">We love music,</p>
             </div>
             <p class="about para">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -72,16 +77,16 @@
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="band">
-                <div class="member">
-                    <p>Name</p>
+                <div class="col-3rd col tb-center">
+                    <p class="mtb16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
-                <div class="member">
-                    <p>Name</p>
+                <div class="col-3rd col tb-center">
+                    <p class="mtb16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
-                <div class="member">
-                    <p>Name</p>
+                <div class="col-3rd col tb-center">
+                    <p class="mtb16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
             </div>
@@ -89,64 +94,165 @@
 
         <!--tour section-->
         <div class="tour-section">
-            <div class="tour">
+            <div id="tour">
                 <div class="chapter">
                     <h1 class="chapter-title text-white">tour date</h1>
-                    <p class="sub-title text-white">Remember to book your tickets!</p>
+                    <p class="sub-title mtb16 tb-center op06 text-white">Remember to book your tickets!</p>
                 </div>
                 <br>
                 <ul class="month-tour">
-                    <li class="row background-white">September <span class="ticket-status">Sold out</span></li>
-                    <li class="row background-white">October <span class="ticket-status">Sold out</span></li>
-                    <li class="row background-white">November <span class="ticket-status available">3</span></li>
+                    <li class="month bw">September <span class="ticket-status">Sold out</span></li>
+                    <li class="month bw">October <span class="ticket-status">Sold out</span></li>
+                    <li class="month bw">November <span class="ticket-status available tb-center">3</span></li>
                 </ul>
-                <div class="place-list">
-                    <div class="place-items">
+                <div class="row place-list">
+                    <div class="col-3rd col mb16">
                         <img src="./asset/images/newyork.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading">New York</b>
-                            <p class="place-time">Fri27November2016</p>
-                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                            <b class="place-heading mtb16">New York</b>
+                            <p class="place-time mtb16">Fri27November2016</p>
+                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
 
-                    <div class="place-items">
+                    <div class="col-3rd col mb16">
                         <img src="./asset/images/paris.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading">Paris</b>
-                            <p class="place-time">Fri27November2016</p>
-                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                            <b class="place-heading mtb16">Paris</b>
+                            <p class="place-time mtb16">Fri27November2016</p>
+                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
 
-                    <div class="place-items">
+                    <div class="col-3rd col mb16">
                         <img src="./asset/images/sanfran.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading">SanFransico</b>
-                            <p class="place-time">Sat28November2016</p>
-                            <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy ticket</a>
+                            <b class="place-heading mtb16">SanFransico</b>
+                            <p class="place-time mtb16">Sat28November2016</p>
+                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ticket-modal"></div>
+        <div class="ticket-modal">
+            <div class="modal-container">
+                <button class="modal-close js-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <header class="modal-header">
+                    <i class="fa-solid fa-suitcase"></i> Tickets
+                </header>
+                <div class="modal-body">
+                    <p>
+                        <label for="quantity" class="modal-lable">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Tickets, $15 per person
+                        </label>
+                    </p>
+                    <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+                    <p>
+                        <label for="email" class="modal-lable">
+                            <i class="fa-solid fa-user"></i>
+                            Send to
+                        </label>
+                    </p>
+                    <input id="email" type="text" class="modal-input" placeholder="Enter email...">
+                    <button class="buy-tickets">PAY <i class="fa-solid fa-check"></i></button>
+                    <footer class="modal-footer">
+                        <p class="modal-help">Need <a href="#">help?</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
         <!--contact section-->
 
-        <div class="contact">
+        <div id="contact">
             <div class="chapter">
                 <h1 class="chapter-title">contact</h1>
-                <p class="sub-title">Fan?Drop a note!</p>
+                <p class="sub-title mtb16 tb-center op06">Fan?Drop a note!</p>
+            </div>
+
+
+            <div class="form">
+                <div class="col col-half contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+                    <p><i class="fa-solid fa-mobile"></i>Phone: +123 1234 5 </p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: mail@gmail.com</p>
+                </div>
+                <div class="col col-half contact-form">
+                    <form action="">
+                        <div class="col col-half">
+                            <input type="text" name="" placeholder="Name" id="" class="form-control" />
+                        </div>
+                        <div class="col col-half">
+                            <input type="email" name="" placeholder="Email" id="" class="form-control" />
+                        </div>
+                        <div class="col col-full mt-8">
+                            <input type="text" name="" placeholder="Message" id="" class="form-control" />
+                        </div>
+                        <input class="form-submit-bt mt-16" type="submit" value="SEND" />
+                    </form>
+                </div>
             </div>
         </div>
 
         <!--map section-->
-        <div class="map-image"></div>
+        <div class="map-image">
+            <img src="./asset/images/map.jpg" alt="" class="map-image" style="width: 100%;">
+        </div>
 
     </div>
+
+    <footer class="tb-padding-64 tb-center op06 tb-light-grey tb-xlarge">
+        <i class="fa-brands fa-facebook hover-op06"></i>
+        <i class="fa-brands fa-instagram hover-op06"></i>
+        <i class="fa-brands fa-snapchat hover-op06"></i>
+        <i class="fa-brands fa-pinterest-p hover-op06"></i>
+        <i class="fa-brands fa-twitter hover-op06"></i>
+        <i class="fa-brands fa-linkedin hover-op06"></i>
+        <p class="mtb16">Cloned by <a href="https://www.faceboock.com/truongchuong7749" target="_blank">cj21</a></p>
+    </footer>
+    <script>
+
+        // display/hidden buy-tickets
+        const buyBtns = document.querySelectorAll('.js-buy-btn')
+        const ticketModal = document.querySelector('.ticket-modal')
+
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showModal)
+        }
+
+        const closeBtn = document.querySelector('.js-close-btn')
+        closeBtn.addEventListener('click', hiddenModal)
+
+
+        function showModal() {
+            ticketModal.classList.add('open')
+        }
+        function hiddenModal() {
+            ticketModal.classList.remove('open')
+        }
+
+
+        // nav-show
+        var header = document.getElementById('header')
+        var menuBtn = document.getElementById('mobile-menu-btn')
+        menuBtn.onclick = function () {
+            var isClosed = header.clientHeight === 46;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = '46px';
+            }
+        }
+
+    </script>
 </body>
+
 </html>
