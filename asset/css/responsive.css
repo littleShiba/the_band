@@ -1,38 +1,85 @@
 /* PC */
-@media (min-width: 1024px) {
-    .mobile-menu-btn{
-			display: none;
-		}
+@media (min-width: 64em) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .merch {
+    display: none !important;
+  }
 }
-
 
 /* tablet*/
 
-@media (min-width: 740px) and (max-width: 1023px) {
-	.description {
-		font-size: 14px;
-	}
-	.mobile-menu-btn{
-		display: none;
-	}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .description {
+    font-size: 14px;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .merch {
+    display: none !important;
+  }
+  .fa-brands {
+    padding: 10px;
+  }
 }
 
-  /* mobile */
+/* mobile */
 
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
+  .mt-8 {
+    margin-top: 0px;
+  }
 
-	.search-btn{
-		display: none;
-	}
+  .s-full-width {
+    width: 100% !important;
+  }
 
-	.navbar>li{
-		display: block;
-	}
-	.description {
-		display: none;
-	}
-	
-	.col-3rd{
-		width: 100%;
-	}
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .media {
+    display: none !important;
+  }
+
+  .navbar > li {
+    display: block;
+  }
+
+  .navbar > li > a {
+    display: block;
+  }
+
+  .navbar > li:first-child {
+    display: inline-block;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .col-3rd,
+  .place-buy-btn,
+  .col {
+    width: 100%;
+  }
+
+  .form-control {
+    margin-top: 10px;
+  }
+
+  .contact-form {
+    margin-top: 24px;
+  }
 }

@@ -16,13 +16,14 @@
 </head>
 
 <body>
+
     <div id="header">
         <ul class="navbar">
             <li><a href="#">HOME</a></li>
             <li><a href="#the-band">BAND</a></li>
             <li><a href="#tour">TOUR</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li>
+            <li class="media">
                 <a href="#" style="pointer-events: none;">MORE<i class="fas fa-caret-down"></i></a>
                 <ul class="sub-nav">
                     <li class="sub-items"><a href="#">Mechandise</a></li>
@@ -30,6 +31,7 @@
                     <li class="sub-items"><a href="#">Media</a></li>
                 </ul>
             </li>
+            <li class="merch"><a href="#">MERCH</a></li>
         </ul>
         <div class="search-btn">
             <i class="search-icon fas fa-search"></i>
@@ -42,23 +44,23 @@
     <div id="content">
         <!--slideshow section-->
         <div class="slider-items">
-            <img class="slider-image" src="asset/images/chicago.jpg" alt="">
+            <img class="slider-image" src="./asset/images/chicago.jpg" alt="">
             <div class="description">
                 <h3>Chicago</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
         </div>
-        <div class="slider-items" style="display: none;">
-            <img class="slider-image" src="asset/" alt="">
+        <div class="slider-items">
+            <img class="slider-image" src="./asset/images/ny.jpg" alt="">
             <div class="description">
                 <h3>New York</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
         </div>
-        <div class="slider-items" style="display: none;">
-            <img class="slider-image" src="asset/" alt="">
+        <div class="slider-items">
+            <img class="slider-image" src="./asset/images/la.jpg" alt="">
             <div class="description">
-                <h3>los Angeles</h3>
+                <h3>Los Angeles</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
         </div>
@@ -67,7 +69,7 @@
         <div id="the-band">
             <div class="chapter">
                 <h2 class="chapter-title">the band</h1>
-                    <p class="sub-title mtb16 tb-center op06">We love music,</p>
+                    <p class="sub-title mtb-16 tb-center op06">We love music,</p>
             </div>
             <p class="about para">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -78,15 +80,15 @@
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="band">
                 <div class="col-3rd col tb-center">
-                    <p class="mtb16">Name</p>
+                    <p class="mtb-16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
                 <div class="col-3rd col tb-center">
-                    <p class="mtb16">Name</p>
+                    <p class="mtb-16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
                 <div class="col-3rd col tb-center">
-                    <p class="mtb16">Name</p>
+                    <p class="mtb-16">Name</p>
                     <img class="band-member" src="./asset/images/bandmember.jpg " alt="">
                 </div>
             </div>
@@ -97,7 +99,7 @@
             <div id="tour">
                 <div class="chapter">
                     <h1 class="chapter-title text-white">tour date</h1>
-                    <p class="sub-title mtb16 tb-center op06 text-white">Remember to book your tickets!</p>
+                    <p class="sub-title mtb-16 tb-center op06 text-white">Remember to book your tickets!</p>
                 </div>
                 <br>
                 <ul class="month-tour">
@@ -106,32 +108,32 @@
                     <li class="month bw">November <span class="ticket-status available tb-center">3</span></li>
                 </ul>
                 <div class="row place-list">
-                    <div class="col-3rd col mb16">
+                    <div class="col-3rd col mb-16">
                         <img src="./asset/images/newyork.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading mtb16">New York</b>
-                            <p class="place-time mtb16">Fri27November2016</p>
-                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <b class="place-heading mtb-16">New York</b>
+                            <p class="place-time mtb-16">Fri27November2016</p>
+                            <p class="place-decs mtb-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                             <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
 
-                    <div class="col-3rd col mb16">
+                    <div class="col-3rd col mb-16">
                         <img src="./asset/images/paris.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading mtb16">Paris</b>
-                            <p class="place-time mtb16">Fri27November2016</p>
-                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <b class="place-heading mtb-16">Paris</b>
+                            <p class="place-time mtb-16">Fri27November2016</p>
+                            <p class="place-decs mtb-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                             <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
 
-                    <div class="col-3rd col mb16">
+                    <div class="col-3rd col mb-16">
                         <img src="./asset/images/sanfran.jpg" class="place-img" alt="">
                         <div class="place-info">
-                            <b class="place-heading mtb16">SanFransico</b>
-                            <p class="place-time mtb16">Sat28November2016</p>
-                            <p class="place-decs mtb16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <b class="place-heading mtb-16">SanFransico</b>
+                            <p class="place-time mtb-16">Sat28November2016</p>
+                            <p class="place-decs mtb-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                             <button class="place-buy-btn js-buy-btn">Buy Ticket</button>
                         </div>
                     </div>
@@ -174,15 +176,15 @@
         <div id="contact">
             <div class="chapter">
                 <h1 class="chapter-title">contact</h1>
-                <p class="sub-title mtb16 tb-center op06">Fan?Drop a note!</p>
+                <p class="sub-title mtb-16 tb-center op06">Fan?Drop a note!</p>
             </div>
 
 
             <div class="form">
                 <div class="col col-half contact-info">
                     <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-                    <p><i class="fa-solid fa-mobile"></i>Phone: +123 1234 5 </p>
-                    <p><i class="fa-solid fa-envelope"></i>Email: mail@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> Phone: <a href="tel:+123 1234 5">+123 1234 5</a> </p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@gmail.com">mail@gmail.com</a></p>
                 </div>
                 <div class="col col-half contact-form">
                     <form action="">
@@ -195,7 +197,7 @@
                         <div class="col col-full mt-8">
                             <input type="text" name="" placeholder="Message" id="" class="form-control" />
                         </div>
-                        <input class="form-submit-bt mt-16" type="submit" value="SEND" />
+                        <input class="form-submit-bt mt-16 s-full-width" type="submit" value="SEND" />
                     </form>
                 </div>
             </div>
@@ -215,44 +217,9 @@
         <i class="fa-brands fa-pinterest-p hover-op06"></i>
         <i class="fa-brands fa-twitter hover-op06"></i>
         <i class="fa-brands fa-linkedin hover-op06"></i>
-        <p class="mtb16">Cloned by <a href="https://www.faceboock.com/truongchuong7749" target="_blank">cj21</a></p>
+        <p class="mtb-16">Cloned by <a href="https://www.faceboock.com/truongchuong7749" target="_blank">cj21</a></p>
     </footer>
-    <script>
-
-        // display/hidden buy-tickets
-        const buyBtns = document.querySelectorAll('.js-buy-btn')
-        const ticketModal = document.querySelector('.ticket-modal')
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showModal)
-        }
-
-        const closeBtn = document.querySelector('.js-close-btn')
-        closeBtn.addEventListener('click', hiddenModal)
-
-
-        function showModal() {
-            ticketModal.classList.add('open')
-        }
-        function hiddenModal() {
-            ticketModal.classList.remove('open')
-        }
-
-
-        // nav-show
-        var header = document.getElementById('header')
-        var menuBtn = document.getElementById('mobile-menu-btn')
-        menuBtn.onclick = function () {
-            var isClosed = header.clientHeight === 46;
-            if (isClosed) {
-                header.style.height = 'auto';
-            }
-            else {
-                header.style.height = '46px';
-            }
-        }
-
-    </script>
+    <script type="text/javascript" src="./asset/js/home.js"></script>
 </body>
 
 </html>

@@ -39,13 +39,25 @@ ul {
   text-align: center;
 }
 
-.mtb16 {
+.mtb-16 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.mb16{
+.mb-16 {
   margin-bottom: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.col-full {
+  width: 100%;
 }
 
 .op06,
@@ -88,7 +100,6 @@ body {
   left: 0;
   background-color: black;
   z-index: 1;
-  overflow: hidden;
 }
 
 .navbar > li {
@@ -111,6 +122,10 @@ body {
 .navbar > li:hover > a {
   background-color: #ccc;
   color: #000;
+}
+
+.merch {
+  display: none;
 }
 
 .sub-nav {
@@ -197,6 +212,7 @@ body {
 
 .description > p {
   margin: 20px 0;
+  text-shadow: 0 0 1px #000;
 }
 
 #the-band,
@@ -294,7 +310,6 @@ body {
   background-color: #fff;
   padding: 0.1px 15px 15px 15px;
   display: block;
-
 }
 
 .place-heading {
@@ -340,7 +355,7 @@ body {
 .modal-container {
   position: relative;
   width: 900px;
-  max-width: calc(100%-32);
+  max-width: calc(100% - 32px);
   min-height: 200px;
   background: #fff;
 }
@@ -425,22 +440,6 @@ body {
   padding: 30px 0;
 }
 
-.mt-8 {
-  margin-top: 8px;
-}
-
-.mt-16 {
-  margin-top: 16px;
-}
-.col {
-  float: left;
-  padding-left: 8px;
-}
-
-.col-full {
-  width: 100%;
-}
-
 .contact-content {
   margin-top: 48px;
 }
@@ -468,10 +467,11 @@ body {
 .form-submit-bt {
   background-color: #000;
   color: #fff;
-  margin-right: 8px;
   padding: 10px 16px;
   float: right;
   border: unset;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 :hover.form-submit-bt {
@@ -479,7 +479,10 @@ body {
   color: #000;
 }
 
-#footer {
+.map-image {
   display: block;
 }
 
+#footer {
+  display: block;
+}
