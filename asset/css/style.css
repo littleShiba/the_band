@@ -471,6 +471,7 @@ body {
   float: right;
   border: unset;
   appearance: none;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -481,6 +482,10 @@ body {
 
 .map-image {
   display: block;
+}
+
+.fa-brands {
+  cursor: pointer;
 }
 
 #footer {
